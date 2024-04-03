@@ -2,4 +2,98 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 39px;
+  padding-bottom: 56px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__rec {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.header__rec::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.header__theme-menu-list {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  font-size: 18px;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 100%;
+  text-align: center;
+
+}
+
+.header__title {
+  font-size: 116px;
+  color: var(--second-color);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-shadow: 4px 4px 0px var(--accent-color);
+  margin-top: 29px;
+}
+
+.header__subtitle {
+  margin-top: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: var(--black-color);
+  background-color: var(--accent-color);
 }
