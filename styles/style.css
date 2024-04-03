@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
-  background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -121,5 +121,55 @@
 
   .header__subtitle {
     margin-top: 164px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-bottom: 135px;
+  }
+
+  .header::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .header__title {
+    margin-top: 291px;
+    font-size: 157px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .header__subtitle {
+    margin-top: 131px;
+    max-width: 491px;
+  }
+
+  .header__topbar {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .header__theme-menu {
+    margin: auto;
+  }
+
+  .header__theme-menu-list {
+    width: auto;
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .header__theme-menu-button {
+    padding: 0 13px;
+  }
+
+  .header__rec {
+    position: absolute;
   }
 }
