@@ -12,7 +12,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: 'IBM Plex mono', monospace;
 }
 
 h1,
@@ -48,20 +48,4 @@ article {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.visible__tablet {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .visible__tablet {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .hidden__desktop {
-    display: none !important;
-  }
 }
