@@ -2,7 +2,7 @@
 
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    background-color: var(--black-color);
+    background-color: var(--page-bg-color);
     background-attachment: fixed;
 }
 
@@ -10,7 +10,7 @@
     position: relative;
     display: flex;
     align-items: end;
-    background-image: url(../images/cover-image-dark.png);
+    background-image: var(--header-bg-image);
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;

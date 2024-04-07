@@ -5,20 +5,24 @@
 */
 :root.theme-light {
     /* Переменные светлой темы */
-    /*--accent-color: #FF8DCB;*/
-    /*--second-color: #FFC2E6;*/
-    /*--black-color: #353430;*/
-    /*--text-color: #353430;*/
+    --accent-color: #FF8DCB;
+    --second-color: #FFC2E6;
+    --black-color: #353430;
+    --text-color: #353430;
+    --header-bg-image: url('../images/cover-image-dark.png');
+    --page-bg-color: #FFF1F7;
 }
 
 /* Остальные стили */
 @media (prefers-color-scheme: light) {
     :root {
         /* Дублируем переменные светлой темы */
-        /*--accent-color: #FF8DCB;*/
-        /*--second-color: #FFC2E6;*/
-        /*--black-color: #353430;*/
-        /*--text-color: #353430;*/
+        --accent-color: #FF8DCB;
+        --second-color: #FFC2E6;
+        --black-color: #353430;
+        --text-color: #353430;
+        --header-bg-image: url('../images/cover-image-light.png');
+        --page-bg-color: #FFF1F7;
     }
 }
 
@@ -28,16 +32,6 @@
       Так стили написанные ниже будут иметь больший вес,
       чем стили в медиазапросе предпочтений пользователя
     */
-    --accent-color: #FF8DCB;
-    --second-color: #FFC2E6;
-    --black-color: #353430;
-    --text-color: #353430;
-
-    background-color: #FFF1F7;
-
-    .header {
-        background-image: url(../images/cover-image-light.png);
-    }
 
     .header__theme-menu-button {
         color: var(--black-color);
