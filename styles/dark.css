@@ -11,6 +11,8 @@
     --text-color: #F1B2CE;
     --header-bg-image: url('../images/cover-image-dark.png');
     --page-bg-color: var(--black-color);
+    --accent-dark-black-light: var(--accent-color);
+    --visible-dark-hidden-light: visible;
 }
 
 /* Остальные стили */
@@ -19,4 +21,12 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --accent-color: #FF0070;
+    --second-color: #DB00FF;
+    --black-color: #000028;
+    --text-color: #F1B2CE;
+    --header-bg-image: url('../images/cover-image-dark.png');
+    --page-bg-color: var(--black-color);
+    --accent-dark-black-light: var(--accent-color);
+    --visible-dark-hidden-light: visible;
 }

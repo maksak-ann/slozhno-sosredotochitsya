@@ -10,4 +10,6 @@
   --text-color: #F1B2CE;
   --header-bg-image: url('../images/cover-image-dark.png');
   --page-bg-color: var(--black-color);
+  --accent-dark-black-light: var(--accent-color);
+  --visible-dark-hidden-light: visible;
 }
