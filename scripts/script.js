@@ -42,6 +42,8 @@ function initTheme() {
     document
       .querySelector(`.header__theme-menu-button_type_${theme}`)
       .setAttribute('disabled', true);
+  } else {
+    changeTheme('auto');
   }
 }
 
