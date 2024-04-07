@@ -5,15 +5,20 @@
 */
 :root.theme-light {
     /* Переменные светлой темы */
-    /*--accent-color: #0f0;*/
-    /*--second-color: #DB00FF;*/
-    /*--black-color: #000028;*/
+    --accent-color: #FF8DCB;
+    --second-color: #FFC2E6;
+    --black-color: #353430;
+    --text-color: #353430;
 }
 
 /* Остальные стили */
 @media (prefers-color-scheme: light) {
     :root {
         /* Дублируем переменные светлой темы */
+        --accent-color: #FF8DCB;
+        --second-color: #FFC2E6;
+        --black-color: #353430;
+        --text-color: #353430;
     }
 }
 
