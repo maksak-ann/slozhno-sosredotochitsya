@@ -42,9 +42,11 @@
     .header__theme-menu-button {
         color: var(--black-color);
     }
+
     .header__theme-menu-button_active {
         border-color: var(--black-color);
     }
+
     .header__theme-menu-button:hover {
         border-color: rgb(from var(--black-color) r g b / .4) !important;
     }
