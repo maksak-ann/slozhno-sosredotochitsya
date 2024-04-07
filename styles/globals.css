@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -40,4 +42,26 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.visible__tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .visible__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden__desktop {
+    display: none !important;
+  }
 }

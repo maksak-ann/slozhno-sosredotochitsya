@@ -5,6 +5,9 @@
 */
 :root.theme-dark {
   /* Дублируем переменные для тёмной темы */
+  --accent-color: #FF0070;
+  --second-color: #DB00FF;
+  --black-color: #000028;
 }
 
 /* Остальные стили */

@@ -4,7 +4,10 @@
 */
 :root {
   /* Переменные тёмной темы */
+  --page-bg-color: #000028;
   --accent-color: #FF0070;
   --second-color: #DB00FF;
   --black-color: #000028;
+  --text-color: #F1B2CE;
+  --header-bg-image: url(../images/cover-image-dark.png)
 }

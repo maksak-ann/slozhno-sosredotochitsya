@@ -4,21 +4,68 @@
   переключая тему
 */
 :root.theme-light {
-  /* Переменные светлой темы */
+    /* Переменные светлой темы */
+    /*--accent-color: #0f0;*/
+    /*--second-color: #DB00FF;*/
+    /*--black-color: #000028;*/
 }
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-  :root {
-    /* Дублируем переменные светлой темы */
-  }
+    :root {
+        /* Дублируем переменные светлой темы */
+    }
 }
 
 /* Остальные стили */
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+    --accent-color: #FF8DCB;
+    --second-color: #FFC2E6;
+    --black-color: #353430;
+    --text-color: #353430;
+
+    background-image: url(../images/cover-image-light.png);
+
+    .header__theme-menu-button {
+        color: var(--black-color);
+    }
+    .header__theme-menu-button_active {
+        border-color: var(--black-color);
+    }
+    .header__theme-menu-button:hover {
+        border-color: rgb(from var(--black-color) r g b / .4) !important;
+    }
+
+    .header__theme-menu-button:focus-visible {
+        border-block-end-color: 1px solid var(--black-color) !important;
+    }
+
+    .title {
+        color: var(--black-color);
+    }
+
+    .header__rec {
+        visibility: hidden;
+    }
+
+    .header::before {
+        border-color: var(--black-color);
+    }
+
+    .header::after {
+        border-color: var(--black-color);
+    }
+
+    .footer::before {
+        border-color: var(--black-color);
+    }
+
+    .footer::after {
+        border-color: var(--black-color);
+    }
 }
