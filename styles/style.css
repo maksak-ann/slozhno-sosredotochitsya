@@ -102,13 +102,13 @@
 }
 
 .header__theme-menu-button:hover {
-    border: 1px solid rgb(from var(--accent-dark-black-light) r g b / .4) !important;
+    border: 1px solid rgb(from var(--accent-dark-black-light) r g b / .4);
 }
 
 .header__theme-menu-button:focus-visible {
     outline: none;
-    border: none !important;
-    border-block-end: 1px solid var(--accent-dark-black-light) !important;
+    border: none;
+    border-block-end: 1px solid var(--accent-dark-black-light);
 }
 
 .header__title {
